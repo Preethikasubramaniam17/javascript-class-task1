@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .orginal{
+            color: antiquewhite;
+        }
+        .cloned{
+            color: brown;
+        }
+        .parent{
+            border: 2px solid blueviolet;
+            padding:10px;
+            background-color: aqua;
+        }
+
+        .child{
+            border:2px solid yellow;
+            margin: 5px;
+            padding: 5px;
+            background-color: aquamarine;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div class="parent">
+        <div class="child">child element</div>
+    </div>
+    <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ol>
+
+    <script>
+        // // select the child element
+        // let childelement = document.querySelector('.child');
+        // let parentdiv =document.querySelector('.parent');
+
+        // console.log(childelement.parentElement);
+        // console.log(parentdiv.childNodes);
+
+        // // access the parent node and modify its style
+        // let parent
+
+        // select the original element
+        let orginalelement= document.querySelector('original')
+
+        // clone the element and modify the clone
+        let clonedelement=orginalelement.cloneNode(true);
+        clonedelement.textContent+="new content";
+        clonedelement.classlist.add('cloned');
+
+        // append the cloned element to the body
+        document.body.append(clonedelement);
+    </script>
+
+    <p class="highlight new">This is a highlight paragraph.</p>
+
+    <p>This is a normal paragraph.</p>
+    <h1 class="highlight" id="h1">h1 1st tag</h1>
+
+    <div class="highlight new">This is a highlight div.</div>
+    
+    <p class="highlight new">Another highlight paragraph</p>
+
+    <div><h1> h1 2nd Tag</h1></div>
+
+    <p id="username"></p>
+
+   <ol class="ol">
+    <li>Class</li>
+    <li>book</li>
+    <li>pencil</li>
+    <li>easer</li>
+    <li>pen</li>
+   </ol>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
