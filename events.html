@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            background-color: brown;
+            width: 150px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <p id='click'>click</p>
+
+    <p id='dblclick'>DoubleClick</p>
+
+    <p id='mousedown'>mousedown</p>
+
+    <p id='mouseup'>mouseup</p>
+
+    <p id='mousemove'>mousemove</p>
+
+    <p id='mouseenter'>mouseenter</p>
+
+    <p id='mouseleave'>mouseleave</p>
+
+    <script>
+    var click = document.getElementById('click');
+
+    click.addEventListener('click',function(){
+        console.log('click event triggered.');
+    });
+
+//     var dblclick = document.getElementById('dblclick');
+
+//  dblclick.addEventListener('dblclick' , function (){
+//     console.log('Doubleclick event triggered.');
+//  });
+
+
+var mousedown = document.getElementById('mousedown');
+
+mousedown.addEventListener('mousedown',function(){
+    console.log('mousedown event triggered.');
+});
+
+
+var mouseup = document.getElementById('mouseup');
+
+mouseup.addEventListener('mouseup',function(){
+    console.log('mouseup event triggered.');
+});
+
+var mousedown = document.getElementById('mousedown');
+
+mousemove.addEventListener('mousemove',function(){
+    console.log('mousemove event triggered.');
+});
+
+var mouseenter = document.getElementById('mouseenter');
+
+mouseenter.addEventListener('mouseenter',function(){
+    console.log('mouseenter event triggered.');
+});
+
+var mouseleave = document.getElementById('mouseleave');
+
+mouseleave.addEventListener('mouseleave',function(){
+    console.log('mouseleave event triggered.');
+});
+
+    
+    
+
+    </script>
+
+
+    
+</body>
+</html>
